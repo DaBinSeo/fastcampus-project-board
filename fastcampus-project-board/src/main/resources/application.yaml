@@ -13,6 +13,10 @@ spring:
     username: seodb
     password: seodb
     driver-class-name: com.mysql.cj.jdbc.Driver
+  # h2 data base  -> console 접속시 url : org.h2.Driver
+#   url: jdbc:h2:mem:testdb
+#   username: sa
+#   driver-class-name: org.h2.Driver
   jpa:
     defer-datasource-initialization: true
     hibernate.ddl-auto: create
@@ -20,7 +24,8 @@ spring:
     properties:
       hibernate.format_sql: true
       hibernate.default_batch_fetch_size: 100
-  h2.console.enabled: true
+      #h2 console
+  h2.console.enabled: false
   sql.init.mode: always
 
 
